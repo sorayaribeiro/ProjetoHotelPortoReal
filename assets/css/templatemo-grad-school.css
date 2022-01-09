@@ -296,10 +296,14 @@ a.menu-link { display: none; }
   margin-bottom: -7px;
 }
 
+iframe{
+
+}
+
 #bg-video {
-    min-width: 100%;
+    width: 100vh;
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
     max-height: 100vh;
     object-fit: cover;
     z-index: -1;
