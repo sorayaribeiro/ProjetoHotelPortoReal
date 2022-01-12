@@ -164,8 +164,12 @@ a.menu-link { display: none; }
   }
 }
 
+.logo img{
+  height: 70px;
+}
+
 .main-header {
-    background-color: rgba(22,34,57,0.95);
+    background-color: rgba(29, 44, 124, 0.95);
     height: 80px;
     position: fixed;
     z-index: 12;
@@ -175,7 +179,7 @@ a.menu-link { display: none; }
 
 .main-header .logo {
     float: left;
-    line-height: 80px;
+    line-height: 70px;
     padding-left: 60px;
 }
 
@@ -229,7 +233,7 @@ a.menu-link { display: none; }
 
 .main-menu li .sub-menu {
     position: absolute;
-    width: 160px;
+    width: 200px;
     background-color: #18233a;
     opacity: 0;
     visibility: hidden;
@@ -260,7 +264,7 @@ a.menu-link { display: none; }
 }
 
 .main-menu li .sub-menu li a {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     padding: 0px 15px;
     letter-spacing: 0.5px;
@@ -288,6 +292,11 @@ a.menu-link { display: none; }
 
 
 /* Slider */
+#top{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .main-banner {
   position: relative;
@@ -301,7 +310,7 @@ iframe{
 }
 
 #bg-video {
-    width: 100vh;
+    width: 100%;
     min-height: 100vh;
     width: 100%;
     max-height: 100vh;
