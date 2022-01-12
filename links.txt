@@ -28,6 +28,32 @@ HPS06
       </video>
 
 
+color: rgba(239, 206, 99, 0.7);
+#f5a425
+#18233a
+
+
+STANDARD VISTA RESORT
+STANDARD VISTA MAR
+STANDARD DELUXE
+SUPERIOR VISTA MAR
+SUITE VISTA MAR
+SUITE LUXO VISTA MAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -276,10 +276,14 @@ a.menu-link { display: none; }
     color: #f5a425;
     border: none;
 }
+.main-nav li a:hover{
+  color: #f5a425;
+}
 
-.main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #f5a425;
+    height: 3px;
+    transition: all 0.4s ease;
+    
 }
 
 @media (max-width: 950px) {
@@ -503,11 +507,8 @@ section.features .col-4 {
 /* Why Choosing Us */
 
 section.why-us {
-    background-image: url(../images/choosing-bg.jpg);
-    background-color: #172238;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 100px;
+    background-color: #18233a;
+
 }
 
 #tabs {
@@ -534,6 +535,7 @@ section.why-us {
   font-size: 1.2em;
   letter-spacing: 1px;
   text-align: center;
+  
 }
 #tabs ul li a {
   display: block;
@@ -542,51 +544,32 @@ section.why-us {
   letter-spacing: 1px;
   cursor: pointer;
   outline: 0;
+  list-style: none;
   padding-bottom: 30px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
 }
-#tabs ul li a:after {
-    transition: all 0.3s;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 0;
-}
-#tabs ul li a:before {
-    transition: all 0.3s;
-    width: 25px;
-    height: 25px;
-    border: 2px solid transparent;
-    background-color: transparent;
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: -5px;
-}
+
 #tabs ul li span {
   display: block;
   margin-bottom: 0.75em;
 }
+
 #tabs ul .ui-tabs-active {
 }
 #tabs ul .ui-tabs-active a {
-  color: #f5a425;
+  color: rgba(239, 206, 99, 0.7);
+  
+  
 }
 #tabs ul .ui-tabs-active a:after {
-  background-color: #f5a425;
-  width: 15px;
-  height: 15px;
+  background-color: rgba(239, 206, 99, 0.7);
+ 
 }
 #tabs ul .ui-tabs-active a:before {
-  border-color: #f5a425;
+  border-color: rgba(239, 206, 99, 0.7);
 }
 #tabs h4 {
     margin-top: 60px;
@@ -629,6 +612,7 @@ section.why-us {
   }
 
 }
+
 
 
 /* Coming Soon */
