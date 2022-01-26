@@ -1,0 +1,59 @@
+/* ESTILOS GLOBAIS
+-------------------------------------------------- */
+/* Padding abaixo do footer e texto mais suave no <body> */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+  
+  
+  /* CUSTOMIZA O CAROUSEL
+  -------------------------------------------------- */
+
+  }
+  /* Classe base do carousel */
+  .carousel {
+    padding: 0;
+    
+  }
+  
+  
+  /* Declaramos alturas, devido ao posicionamento do elemento img */
+  .carousel-item {
+    height: 300px;
+    width: 100%;
+    
+    
+  }
+  .carousel-item > img {
+    position: absolute;    
+    width: auto;
+    height: 100%;
+   
+  }
+  
+ 
+  
+  /* CSS RESPONSIVE
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Aumenta o tamanho do conteúdo do carousel */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }

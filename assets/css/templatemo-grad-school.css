@@ -1,22 +1,18 @@
 /*
-    
-TemplateMo 557 Grad School
-
-https://templatemo.com/tm-557-grad-school
-
+Soraya Ribeiro Template
 */
-
 
 @import url(fontawesome.css);
 @import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Basic */
+/* Basico */
 
 a {
-	color: #3CF;
+	color: rgba(250,250,250,0.1);
     text-decoration: none;
 }
 
@@ -295,7 +291,7 @@ a.menu-link { display: none; }
 }
 
 
-/* Slider */
+/* Slide */
 #top{
   width: 100%;
   margin: 0;
@@ -393,7 +389,7 @@ iframe{
 }
 
 
-/* Features */
+/* Recursos */
 
 section.features .col-4 {
     padding-left: 0px;
@@ -504,11 +500,12 @@ section.features .col-4 {
 
 
 
-/* Why Choosing Us */
+/* Quartos */
 
-section.why-us {
-    background-color: #18233a;
-
+section.bedroon {
+    background-image: url(../../img/Galeria/F_0008_Layer32.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #tabs {
@@ -591,6 +588,17 @@ section.why-us {
     text-align: left;
 }
 
+#group{
+  width: 100vh;
+  
+  float: left;
+}
+
+.col-md-6{
+  width: 100%;
+  float: left;
+}
+
 @media screen and (max-width: 767px) {
   
   .tabs-content {
@@ -602,7 +610,7 @@ section.why-us {
 .tabs-content img {
     width: 100%;
     overflow: hidden;
-    padding-right: 45px;
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -612,23 +620,24 @@ section.why-us {
   }
 
 }
-
-
-
-/* Coming Soon */
-
-section.coming-soon {
-    background-image: url(../images/coming-soon-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #172238;
-    padding: 120px 0px;
+.col-md-12{
+  background-color: rgba(0,0,0,0.5);
 }
 
-section.coming-soon .continer .counter div {
+
+/* Tarifas */
+
+section.tarifas {
+    background-image: url(../../img/Galeria/F_0014_Layer101.jpg)
+    background-repeat: no-repeat;
+    background-size: cover;    
+    padding: 0px 0px;
+}
+
+section.tarifas .continer .counter div {
   display: inline-block;
 }
-section.coming-soon .continer h4 {
+section.tarifas .continer h4 {
     margin-top: 100px;
     font-size: 30px;
     color: #fff;
@@ -637,23 +646,23 @@ section.coming-soon .continer h4 {
     line-height: 40px;
     margin-bottom: 50px;
 }
-section.coming-soon .continer h4 em {
+section.tarifas .continer h4 em {
     font-style: normal;
     color: #f5a425;
 }
 
 @media screen and (max-width: 767px) {
 
-  section.coming-soon .continer h4 {
+  section.tarifas .continer h4 {
     text-align: center;
   }
 
 }
 
-section.coming-soon .continer .counter .days,
-section.coming-soon .continer .counter .hours,
-section.coming-soon .continer .counter .minutes,
-section.coming-soon .continer .counter .seconds {
+section.tarifas .continer .counter .days,
+section.tarifas .continer .counter .hours,
+section.tarifas .continer .counter .minutes,
+section.tarifas .continer .counter .seconds {
   width: 22%;
   height: 140px;
   float: left;
@@ -666,40 +675,40 @@ section.coming-soon .continer .counter .seconds {
 }
 @media screen and (max-width: 992px) {
 
-  section.coming-soon .continer .counter .days,
-  section.coming-soon .continer .counter .hours,
-  section.coming-soon .continer .counter .minutes,
-  section.coming-soon .continer .counter .seconds {
+  section.tarifas .continer .counter .days,
+  section.tarifas .continer .counter .hours,
+  section.tarifas .continer .counter .minutes,
+  section.tarifas .continer .counter .seconds {
     font-size: 26px;
   }
 
-  section.coming-soon .continer .counter .days .value,
-  section.coming-soon .continer .counter .hours .value,
-  section.coming-soon .continer .counter .minutes .value,
-  section.coming-soon .continer .counter .seconds .value {
+  section.tarifas .continer .counter .days .value,
+  section.tarifas .continer .counter .hours .value,
+  section.tarifas .continer .counter .minutes .value,
+  section.tarifas .continer .counter .seconds .value {
       margin-top: 40px!important;
   }
 
-  section.coming-soon .continer .counter span {
+  section.tarifas .continer .counter span {
       font-size: 14px!important;
   }
 
 }
-section.coming-soon .continer .counter .days,
-section.coming-soon .continer .counter .hours,
-section.coming-soon .continer .counter .minutes {
+section.tarifas .continer .counter .days,
+section.tarifas .continer .counter .hours,
+section.tarifas .continer .counter .minutes {
     margin-right: 4%;
 }
-section.coming-soon .continer .counter .days .value,
-section.coming-soon .continer .counter .hours .value,
-section.coming-soon .continer .counter .minutes .value,
-section.coming-soon .continer .counter .seconds .value {
+section.tarifas .continer .counter .days .value,
+section.tarifas .continer .counter .hours .value,
+section.tarifas .continer .counter .minutes .value,
+section.tarifas .continer .counter .seconds .value {
     margin-top: 15px;
     display: block;
     width: 100%;
 }
 
-section.coming-soon .continer .counter span {
+section.tarifas .continer .counter span {
     font-size: 18px;
     text-transform: uppercase;
     color: #f5a425;
@@ -709,24 +718,24 @@ section.coming-soon .continer .counter span {
     display: block;
 }
 
-section.coming-soon .right-content {
+section.tarifas .right-content {
     margin-left: 30px;
 }
 
 @media screen and (max-width: 767px) {
 
-  section.coming-soon .right-content {
+  section.tarifas .right-content {
       margin-top: 60px;
       margin-left: 0px;
   }
 
 }
 
-section.coming-soon .top-content {
+section.tarifas .top-content {
     margin-bottom: -8px;
 }
 
-section.coming-soon .top-content h6 {
+section.tarifas .top-content h6 {
     font-size: 14px;
     color: #fff;
     background-color: rgba(250,250,250,0.2);
@@ -735,19 +744,19 @@ section.coming-soon .top-content h6 {
     line-height: 24px;
 }
 
-section.coming-soon .top-content h6 em {
+section.tarifas .top-content h6 em {
     font-style: normal;
     font-weight: 600;
 }
 
-section.coming-soon form {
+section.tarifas form {
     background-color: rgba(250,250,250,0.1);
     padding: 60px 40px;
     width: 100%;
     text-align: center;
 }
 
-section.coming-soon form input {
+section.tarifas form input {
     width: 100%;
     height: 40px;
     background-color: rgba(250,250,250,0.1);
@@ -760,7 +769,7 @@ section.coming-soon form input {
     letter-spacing: 0.5px;
 }
 
-section.coming-soon form input:focus {
+section.tarifas form input:focus {
     outline: none;
     border: none;
     box-shadow: none;
@@ -768,11 +777,11 @@ section.coming-soon form input:focus {
     background-color: rgba(250,250,250,0.1);
 }
 
-section.coming-soon form::placeholder { color: #fff }
-section.coming-soon form input::placeholder { color: #fff; }
-section.coming-soon form input::placeholder { color: #fff; }
+section.tarifas form::placeholder { color: #fff }
+section.tarifas form input::placeholder { color: #fff; }
+section.tarifas form input::placeholder { color: #fff; }
 
-section.coming-soon form button {
+section.tarifas form button {
     margin-top: 10px;
     background-color: #f5a425;
     color: #fff;
@@ -787,12 +796,86 @@ section.coming-soon form button {
     border: none;
 }
 
+/* Preços */
+
+#container-table{
+  width: 100%;
+  height: auto;
+  color: #fff; 
+ 
+  
+}
+
+#left{
+  width:50%;
+  float: left;
+}
+
+#right{
+  width:50%;
+  float: left;
+}
+
+#TitleTable{
+  width: 100%;
+  text-align: center;
+  align-items: center;  
+}
+
+.box-table{
+  width: 90%;
+  height: auto; 
+  margin: 20px 0px;
+  color: #fff;
+  border-radius: 20px 20px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.2)
+}
+
+.align{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding:20px 0 10px 30px;
+}
+
+.spbox td{  
+  width: 100%;  
+  fontSize: 18px;  
+ 
+}
+
+tr{  
+  border-bottom: 1px solid #fff;
+ 
+}
+
+td{
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+.large-box{
+  width: 50%;
+  height: 50px;
+   
+  
+}
+
+.spbox{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+}
 
 
-/* Courses */
 
-section.courses {
-    background-image: url(../images/choosing-bg.jpg);
+/*Localizaçao */
+
+section.locatization {
+    background-image: url(../../img/Galeria/F_0005_Layer59.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -800,196 +883,82 @@ section.courses {
     padding: 0px 30px 100px 30px;
 }
 
-section.courses .item img {
+section.locatization .item img {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
 
-section.courses .item .down-content {
-    padding: 30px;
-    background-color: #fff;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+#locatizationmap{
+  width: 100%;
+  height: 100%;
+  margin:20px auto;
+  align-items: center;
+  paddingTop: 10px 0;
+}
+#locatizationmap h1{
+  width: 100%;
+  color: #fff;
+  text-align: center;
 }
 
-section.courses .item .down-content h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #1e1e1e;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-section.courses .item .down-content p {
-    margin-bottom: 25px;
-}
-
-section.courses .item .down-content img {
-    width: 40px;
-    border: 2px solid #f5a425;
-    border-radius: 50%;
-    text-align: left;
-    display: inline-block;
-}
-
-section.courses .item .down-content .text-button-pay {
-    float: right;
-    display: inline-block;
-    margin-top: -30px;
-}
-
-section.courses .item .down-content .text-button-pay a {
-    color: #f5a425;
-    font-size: 13px;
-}
-
-section.courses .item .down-content .text-button-free {
-    float: right;
-    display: inline-block;
-    margin-top: -30px;
-}
-
-section.courses .item .down-content .text-button-free a {
-    color: #7a7a7a;
-    font-size: 13px;
-}
-
-section.courses .owl-carousel .owl-nav {
-    display: none;
-}
-
-section.courses .owl-carousel .owl-dots {
-    text-align: center;
-}
-
-section.courses .owl-carousel button.owl-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 50px 10px 0px 10px;
-    outline: none;
-}
-section.courses .owl-carousel button.active {
-    background-color: #f5a425;
+#maplocal{
+ 
 }
 
 
 
+/* Reservas */
 
-
-/* Video */
-
-section.video {
-    background-image: url(../images/video-bg.jpg);
+section.reservas {
+    background-image: url(../../img/Galeria/F_0008_Layer32.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
-    padding: 120px 0px;
+    padding: px 0px;
 }
 
-section.video .left-content {
-  color: #fff;
+.col-md-6.align-self-center form{
+  font-size: 16px;  
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #666;
+  justify-content: center;
 }
-
-section.video .left-content span {
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+.col-md-6.align-self-center h1{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-top: 15px;
+  text-align: center;
 }
-
-section.video .left-content h4 {
-    margin-top: 20px;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    line-height: 40px;
-    margin-bottom: 20px;
+.col-md-6.align-self-center input, 
+.col-md-6.align-self-center textarea{
+  width: 480px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
 }
-section.video .left-content h4 em {
-    font-style: normal;
-    color: #f5a425;
-}
-
-section.video .left-content .main-button {
-  margin-top: 30px;
-}
-
-.video-item {
-  position: relative;
+.enviar input{
+  background-color: rgb(0, 124, 182);
+  height: 40px;
   width: 100%;
-  max-width: 600px;
-  margin: 0px auto 0;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  color: rgb(255, 255, 255);
+  
+}
+.enviar input:hover{
+  background: #069;
+}
+textarea{
+  width: 480px;
+  height: 120px;
+  line-height: 20px;
 }
 
-@media screen and (max-width: 767px) {
 
-  section.video .left-content {
-    margin-bottom: 45px;
-  }
-
-  section.video .first-item .first-content h4,
-  section.video .second-item .second-content h4 {
-    text-align: center;
-  }
-
-}
-
-.video-item figure {
-  position: relative;
-  width: 100%;
-  font-size: 0;
-}
-.video-item figure img {
-  width: 100%;
-}
-.video-item figure a:before {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-  width: 60px;
-  height: 60px;
-  margin-top: -32.5px;
-  margin-left: -32.5px;
-  border-radius: 50%;
-  background-color: #f5a425;
-  z-index: 10;
-}
-.video-item figure a:after {
-  content: '';
-  position: absolute;
-  bottom: 27.5px;
-  right: 20px;
-  margin-top: -12.5px;
-  margin-left: -7px;
-  border: solid 13px transparent;
-  border-left: solid 20px;
-  border-left-color: #fff;
-  z-index: 10;
-}
-.video-item figure a:hover:before {
-  background-color: #f5a425;
-}
-
-.video-item .video-caption {
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(250,250,250,0.75);
-    height: 80px;
-    width: 100%;
-    padding: 27px 30px;
-    bottom: 0;
-}
-
-.video-item .video-caption h4 {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
 
 /* Magnific Popup CSS */
 .mfp-bg {
