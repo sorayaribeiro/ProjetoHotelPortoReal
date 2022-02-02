@@ -12,40 +12,39 @@ body {
   /* CUSTOMIZA O CAROUSEL
   -------------------------------------------------- */
 
-  }
-  /* Classe base do carousel */
-  .carousel {
-    padding: 0;
-    
+  .carousel{
+   
   }
   
+  .carousel-indicators{
+    margin-bottom: 20px;
+  }
   
-  /* Declaramos alturas, devido ao posicionamento do elemento img */
   .carousel-item {
-    height: 300px;
+    height: auto;
     width: 100%;
     
     
   }
   .carousel-item > img {
-    position: absolute;    
+    
     width: auto;
     height: 100%;
    
   }
-  
- 
+  .carousel a{
+    
+  }
+
+
+
+
   
   /* CSS RESPONSIVE
   -------------------------------------------------- */
   
   @media (min-width: 40em) {
-    /* Aumenta o tamanho do conteúdo do carousel */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
+   
   
     .featurette-heading {
       font-size: 50px;

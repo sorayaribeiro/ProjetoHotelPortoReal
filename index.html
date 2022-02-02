@@ -8,14 +8,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
     <title>Hotel Porto Real</title>
-    
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="./assets/css/carousel.css.txt">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core CSS 
+    <link rel="stylesheet" href="./vendor/bootstrap/css/carousel.css">-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
   </head>
@@ -39,14 +40,13 @@
     </nav>
   </header>
 
-  <!-- ***** Baner de video com apontador ****** section 1****** ------------------------------------->
+  <!-- ***** Baner de video com apontador ****** ------------------------------------- section 1******-->
   <section class="section main-banner" id="top" data-section="section1">
       <!-- ***** Embed do youtube ***** -->
       <iframe id="bg-video" width="100%" height="100%" src="https://www.youtube.com/embed/q7o-hGPiMP0?autoplay=1&mute=1&controls=0&playlist=q7o-hGPiMP0&loop=1" 
       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
-  <!-- ***** Fim do banner ***** -->
-
+  
   <!--Menu rodape home page-->
   <section class="features">
     <div class="container">
@@ -95,9 +95,8 @@
       </div>
     </div>
   </section>
-  <!-- Fim menu rodape homepage -->
-
-  <!--Inicio menu Quarto ****** section 2*****--------------------------------------------------------->
+  
+  <!--Inicio menu Quarto ****** ---------------------------------------------------------section 2*****-->
   <section class="section bedroon" data-section="section2">
     <div class="container">
       <div class="row">
@@ -106,113 +105,278 @@
             <h2>Quartos</h2>
           </div>
         </div>
-        <div class="col-md-12">
+        <div class="">
           <!--Menu quartos-->
           <div id='tabs'>
             <ul>
-              <li><a href='#tabs-1'>STANDARD VISTA RESORT</a></li>
-              <li><a href='#tabs-2'>STANDARD VISTA MAR</a></li>
-              <li><a href='#tabs-3'>STANDARD DELUXE</a></li>
-              <li><a href='#tabs-4'>SUPERIOR VISTA MAR</a></li>
-              <li><a href='#tabs-5'>SUITE VISTA MAR</a></li>
-              <li><a href='#tabs-6'>SUITE LUXO VISTA MAR</a></li>
+              <li class="menuGalery"><a href='#tabs-1'>STANDARD VISTA RESORT</a></li><br>
+              <li class="menuGalery"><a href='#tabs-2'>STANDARD VISTA MAR</a></li>
+              <li class="menuGalery"><a href='#tabs-3'>STANDARD DELUXE</a></li><br>
+              <li class="menuGalery"><a href='#tabs-4'>SUPERIOR VISTA MAR</a></li>
+              <li class="menuGalery"><a href='#tabs-5'>SUITE VISTA MAR</a></li><br>
+              <li class="menuGalery"><a href='#tabs-6'>SUITE LUXO VISTA MAR</a></li>
             </ul>
             <!--Vista do menu quartos-->
             <section class='tabs-content'>
               <!--Quarto Standard vista resort ********** TABS 1 *********-------------------->
               <article id='tabs-1'>
-                <div class="row">
-                  <div class="col-md-6" id="group">
-                    
-                      <!--Imagens do carousel-->
-                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="./img/Quartos/STDvistaResort01.jpg" alt="Primeiro Slide">
+                <div class="">                                    
+                      <!--Carousel do quarto -->
+                      <!-- Carousel -->
+                        <div id="CaroselQuarto" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                          <!-- Indicadores de imagem -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#CaroselQuarto" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto" data-bs-slide-to="1"></button>
                           </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/Quartos/STDvistaResort02.jpg" alt="Segundo Slide">
+                          <!-- imagens dos quartos -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/Quartos/STDvistaResort01.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/Quartos/STDvistaResort02.jpg" alt="Chicago" class="d-block w-100">
+                            </div>                            
                           </div>
+                          <!-- Botão Next e Prev -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#CaroselQuarto" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#CaroselQuarto" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Anterior</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Próximo</span>
-                        </a>
-                      </div>
-                      <!--fim do carousel-->
 
-
-                  <div class="col-md-6">
+                      <!--fim do carousel-->   
+                    <div id="">          
                     <h4>STANDARD VISTA RESORT</h4>
-                    <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
-                  </div>
+                    <p>Situados no PRÉDIO ANEXO, com ambiente sofisticado e vista para o Resort. 
+                      Dispõem de TV a cabo, ar-condicionado, telefone, frigobar, secador, cofre de segurança, 
+                      acesso em banda larga à Internet, sofá conversível em cama-extra. Estes quartos podem 
+                      ser conectados com uma Suite Vista Mar.</p>
+                    </div>    
                 </div>
               </article>
+
               <!--Quarto Standard vista mar ********** TABS 2 *********--------------->
               <article id='tabs-2'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-02.png" alt="">
-                  </div>
-                  <div class="col-md-6">
+                <div class="">                                    
+                      <!--Carousel do quarto -->
+                      <!-- Carousel -->
+                        <div id="CaroselQuarto2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                          <!-- Indicadores de imagem -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#CaroselQuarto2" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto2" data-bs-slide-to="1"></button>
+                          </div>
+                          <!-- imagens dos quartos -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/Galeria/F_0040_Layer80.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/Galeria/F_0041_Layer76.jpg" alt="" class="d-block w-100">
+                            </div>                            
+                          </div>
+                          <!-- Botão Next e Prev -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#CaroselQuarto2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#CaroselQuarto2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+
+                      <!--fim do carousel-->   
+                    <div id="">          
                     <h4>STANDARD VISTA MAR</h4>
-                    <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> 
-                    <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-                  </div>
+                    <p> Situados no PRÉDIO ANEXO, com ambiente sofisticado e vista para o mar. 
+                      Dispõem de TV a cabo, ar-condicionado, telefone, frigobar, secador, cofre de segurança, 
+                      acesso em banda larga à Internet, sofá conversível em cama-extra. 
+                      Estes quartos podem ser conectados com uma Suite Vista Mar.</p>
+                    </div>    
                 </div>
               </article>
+
               <!--Quarto Standard Deluxe ********** TABS 3 *********---------------->
               <article id='tabs-3'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-03.png" alt="">
-                  </div>
-                  <div class="col-md-6">
+                <div class="">                                    
+                      <!--Carousel do quarto -->
+                      <!-- Carousel -->
+                        <div id="CaroselQuarto3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                          <!-- Indicadores de imagem -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#CaroselQuarto3" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto3" data-bs-slide-to="1"></button>
+                          </div>
+                          <!-- imagens dos quartos -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/Quartos/QUARTO_STANDA_RD_DELUXE-1.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/Quartos/QUARTO_STANDA_RD_DELUXE-2.jpg" alt="" class="d-block w-100">
+                            </div>                            
+                          </div>
+                          <!-- Botão Next e Prev -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#CaroselQuarto3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#CaroselQuarto3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+
+                      <!--fim do carousel-->   
+                    <div id="">          
                     <h4>STANDARD DELUXE</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
-                  </div>
+                    <p>Situados no PRÉDIO PRINCIPAL, com ambiente requintado com vista 
+                      para o mar e/ou para o Resort. Dispõem de TV a cabo, ar-condicionado, 
+                      telefone, frigobar, secador, 
+                      cofre de segurança e acesso em banda larga à Internet..</p>
+                    </div>    
                 </div>
               </article>
+
               <!--Quarto Superior vista mar ********** TABS 4 *********---------------->
               <article id='tabs-4'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-03.png" alt="">
-                  </div>
-                  <div class="col-md-6">
+                <div class="">                                    
+                      <!--Carousel do quarto -->
+                      <!-- Carousel -->
+                        <div id="CaroselQuarto4" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                          <!-- Indicadores de imagem -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#CaroselQuarto4" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto4" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto4" data-bs-slide-to="2"></button>
+                          </div>
+                          <!-- imagens dos quartos -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/Quartos/QUARTO_SUPERIOR_VISTA_MAR-1.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/Quartos/QUARTO_SUPERIOR_VISTA_MAR-2.jpg" alt="" class="d-block w-100">
+                            </div>  
+                            <div class="carousel-item">
+                              <img src="./img/Quartos/QUARTO_SUPERIOR_VISTA_MAR-3.jpg" alt="" class="d-block w-100">
+                            </div>                          
+                          </div>
+                          <!-- Botão Next e Prev -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#CaroselQuarto4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#CaroselQuarto4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+
+                      <!--fim do carousel-->   
+                    <div id="">          
                     <h4>SUPERIOR VISTA MAR</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
-                  </div>
+                    <p>Situados no PRÉDIO PRINCIPAL com ambiente requintado, 
+                      varanda e vista para o mar. Dispõem de TV a cabo, ar-condicionado, 
+                      telefone, frigobar, secador, cofre de segurança, acesso em banda 
+                      larga à Internet, sofá conversível em cama-extra, podendo ser 
+                      conectado com outro Quarto Superior Vista Mar.</p>
+                    </div>    
                 </div>
               </article>
+              
               <!--Quarto Suite vista mar ********** TABS 5 *********---------------->
               <article id='tabs-5'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-03.png" alt="">
-                  </div>
-                  <div class="col-md-6">
+                <div class="">                                    
+                      <!--Carousel do quarto -->
+                      <!-- Carousel -->
+                        <div id="CaroselQuarto5" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                          <!-- Indicadores de imagem -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#CaroselQuarto5" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto5" data-bs-slide-to="1"></button>
+                          </div>
+                          <!-- imagens dos quartos -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/Quartos/QUARTO_SUITE_VISTA_MAR-1.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/Quartos/QUARTO_SUITE_VISTA_MAR-2.jpg" alt="Chicago" class="d-block w-100">
+                            </div>                            
+                          </div>
+                          <!-- Botão Next e Prev -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#CaroselQuarto5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#CaroselQuarto5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+
+                      <!--fim do carousel-->   
+                    <div id="">          
                     <h4>SUITE VISTA MAR</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
-                  </div>
+                    <p>Situadas no PRÉDIO ANEXO, com ambiente sofisticado, 
+                      varanda e vista para o mar. Dispõem de TV a cabo, 
+                      ar-condicionado, telefone, frigobar, secador, cofre de segurança, 
+                      acesso em banda larga à Internet, sofá conversível em cama-extra, 
+                      podendo ser conectadas com um quarto Standard Vista Mar ou com 
+                      um quarto Standard Vista Resort.</p>
+                    </div>    
                 </div>
               </article>
+
               <!--Quarto Suite luxo vista mar ********** TABS 6 *********---------------->
               <article id='tabs-6'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-03.png" alt="">
-                  </div>
-                  <div class="col-md-6">
+                <div class="">                                    
+                      <!--Carousel do quarto -->
+                      <!-- Carousel -->
+                        <div id="CaroselQuarto6" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                          <!-- Indicadores de imagem -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#CaroselQuarto6" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto6" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#CaroselQuarto6" data-bs-slide-to="2"></button>
+                          </div>
+                          <!-- imagens dos quartos -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/Quartos/Suite_luxo_vista_mar1.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/Quartos/Suite_luxo_vista_mar2.jpg" alt="" class="d-block w-100">
+                            </div> 
+                            <div class="carousel-item">
+                              <img src="./img/Quartos/Suite_luxo_vista_mar3.jpg" alt="" class="d-block w-100">
+                            </div>                           
+                          </div>
+                          <!-- Botão Next e Prev -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#CaroselQuarto6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#CaroselQuarto6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+
+                      <!--fim do carousel-->   
+                    <div id="">          
                     <h4>SUITE LUXO VISTA MAR</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
-                  </div>
+                    <p>Situadas no PRÉDIO PRINCIPAL, com ambiente requintado, 
+                      varanda e vista para o mar. Dispõem de TV a cabo, ar-condicionado, 
+                      telefone, frigobar, secador, cofre de segurança, acesso em 
+                      banda larga à Internet, além de sofá conversível em cama-extra 
+                      dispõem de um ambiente contíguo ao quarto onde há um sofá adicional 
+                      também conversível em cama extra, podendo ser conectadas com um quarto
+                       Superior Vista Mar ou com uma outra Suite Luxo Vista Mar.</p>
+                    </div>    
                 </div>
-              </article>
+              </article>                
               <!--Fim tabs quartos -->
             </section>
           </div>
@@ -220,7 +384,7 @@
       </div>
     </div>
   </section>
-  <!--Preços  ****** section 3***** ------------------------------------------------------------------>
+  <!--Preços  ******  ------------------------------------------------------------------section 3*****-->
   <section class="section tarifas" data-section="section3">
     <div class="col-md-12">
       <div class="section-heading">
@@ -228,7 +392,7 @@
       </div> 
       <div class="container">
         <div class="row">          
-              <div id="container-table">                    
+            <div id="container-table">                    
                 <div id="left">
                     <!--Tabelas de preços alta temporada-->                
                     <table class="box-table">
@@ -278,14 +442,12 @@
                                       <tr><td class="large-box">(**)Cama extra ou 3º pessoa></td><td>R$ 227,00</td><td></td></tr>
                   </table>
                 </div>
-              </div>  
-          
-          
+            </div>           
         </div>
       </div>
     </div>
   </section>
-  <!--Localização ****** section 4*****--------------------------------------------------------------->
+  <!--Localização ****** ---------------------------------------------------------------section 4*****-->
   <section class="section locatization" data-section="section4">
     <div class="section-heading">
       <h2>Localização</h2>
@@ -296,7 +458,7 @@
         </div>
       </div>    
   </section>  
-  <!-- Reservas   ****** section 5*****------------------------------------------------------------->
+  <!-- Reservas   ****** -------------------------------------------------------------section 5*****-->
   <section class="section reservas" data-section="section5">
     <div class="section-heading">
       <h2>Reservas</h2>
@@ -329,58 +491,48 @@
       </div>
     </div>
   </section>
-  <!-- Reservas   ****** section 6*****------------------------------------------------------------->
+  <!-- Reservas   ****** -------------------------------------------------------------section 6*****-->
   <section class="section contact" data-section="section6">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Let’s Keep In Touch</h2>
+            <h2>Contato</h2>
           </div>
         </div>
-        <div class="col-md-6">
-        
-        <!-- Do you need a working HTML contact-form script?
-                	
-                    Please visit https://templatemo.com/contact page -->
-                    
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-md-6">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                </fieldset>
-              </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
+        <div class="col-md-6">                         
+                    <form name="formteste" action="" method="post">
+
+                      <h1>Contato</h1>
+              
+                      <p class="nome">
+                          <input type="text" name="nome" placeholder="Informe seu nome" required="required"> 
+                      </p>
+                      <p class="email">
+                          <input type="email" name="email" placeholder="Informe seu e-mail" required="required"> 
+                      </p>
+                      <p class="assunto">
+                          <input type="text" name="assunto" placeholder="Informe o assunto" required="required"> 
+                      </p>
+                      <p class="mensagem">
+                          <textarea name="mensagem" placeholder="Escreva sua mensagem" required="required"></textarea>
+                      </p>
+                      <p class="enviar">
+                          <input type="submit" name="enviar" value="Enviar">
+                      </p>
+                  </form>
         </div>
         
       </div>
     </div>
   </section>
-
+  <!-- Rodape****** --------------------------------------------------------------->
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School  
-          
-           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+          <p><i class="fa fa-copyright"></i> Copyright 2022             
+           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">by Soraya Ribeiro</a></p>
         </div>
       </div>
     </div>
@@ -389,8 +541,6 @@
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
@@ -398,6 +548,11 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>    
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+    </script>
+
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
@@ -448,18 +603,9 @@
           checkSection();
         });
     </script>
-    <script>
-      var myCarousel = document.querySelector('#CarouselSlide')
-      var carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 1000,
-      wrap: false
-      })
-    </script>
     
-<!--Bootstrap Core Javascript-->
-<script src="./vendor/jquery/jquery.min.js"></script>
-<script> window.jQuery || document.write('<script src="./vendor/jquery/jquery.min.js"></script>')</script>
-<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    
+
 
 </body>
 
