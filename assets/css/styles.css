@@ -7,6 +7,7 @@ Soraya Ribeiro Template
 
 body {
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 /* Basico *************************************/
@@ -25,11 +26,6 @@ ul {
     padding: 0px;
     margin: 0px;
     list-style: none;
-}
-
-p {
-    font-size: 13px;
-    line-height: 22px;
 }
 
 
@@ -52,7 +48,7 @@ p {
 .section-heading h2 {
     margin-top: 100px;
     position: relative;
-    font-size: 18px;
+    font-size: 22x;
     font-weight: 500;
     color: #fff;
     letter-spacing: 0.5px;
@@ -76,7 +72,9 @@ p {
     outline: none;
 }
 
-a.menu-link { display: none; }
+a.menu-link { 
+  display: none; 
+}
 
 @media screen and (max-width: 950px) {
   a.menu-link {
@@ -208,7 +206,7 @@ a.menu-link { display: none; }
 
 .main-menu li a {
     padding: 10px 15px;
-    font-size: 13px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 700;
@@ -311,15 +309,6 @@ a.menu-link { display: none; }
     display: none !important;
 }
 
-/*Carousel***************************************/
-
-
-
-
-
-
-
-
 
 /* Recursos *************************************/
 
@@ -358,7 +347,7 @@ section.features .col-4 {
 }
 
 .features-content h4 {
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
@@ -373,6 +362,7 @@ section.features .col-4 {
 
 .features-content p {
     margin-bottom: 0px;
+  
 }
 
 .features-content a {
@@ -382,7 +372,7 @@ section.features .col-4 {
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   border-bottom: 2px solid #fff;
 }
 
@@ -398,10 +388,13 @@ section.features .col-4 {
 .content-hide {
   margin-top: 15px;
   display: none;
+  
 }
 
 .content-hide p {
   color: #fff;
+  font-size: 18px;
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -411,20 +404,22 @@ section.features .col-4 {
   }
   .features-content h4 i {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
   .features-content h4 {
     font-size: 14px;
   }
   .features-content p {
     display: none;
+    
   }
   .features-content p.hidden-sm {
     display: block;
+    
   }
   .features-content a {
     letter-spacing: 0px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
   }
 
@@ -439,8 +434,6 @@ section.bedroon {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 
 #tabs {
   text-align: center;
@@ -478,7 +471,7 @@ section.bedroon {
 }
 #tabs ul li a {
   display: block;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
@@ -522,13 +515,14 @@ section.bedroon {
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #tabs p {
     color: #fff;
-    font-size: 15px;
-    line-height: 28px;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 40px;
 }
 
 .tabs-content {
@@ -542,8 +536,14 @@ section.bedroon {
   float: left;
 }
 
-.col-md-6{
-  width: 100vh;
+.ContactBox{
+  width: 100%;
+  display: column;
+  
+}
+
+.align1{  
+  width: 50%;
   
 }
 
@@ -572,8 +572,10 @@ section.bedroon {
  background: #172238;
 }
 
-
-
+.TextQT h4{
+ text-align: center; 
+ 
+}
 
 
 /* Tarifas *************************************/
@@ -757,47 +759,31 @@ section.tarifas form button {
   
 }
 
-#left{
-  width:50%;
-  float: left;
-}
-
-#right{
-  width:50%;
-  float: left;
-}
-
 #TitleTable{
-  width: 100%;
+  
   text-align: center;
   align-items: center;  
 }
 
 .box-table{
-  width: 90%;
-  height: auto; 
+  width: 100%;
   margin: 20px 0px;
   color: #fff;
-  border-radius: 20px 20px 0px 0px;
+  border:1px solid #fff;
   background-color: rgba(0, 0, 0, 0.2)
 }
 
 .align{
   width: 100%;
   text-align: center;
+  color: #FC3;
   align-items: center;
   padding:20px 0 10px 30px;
 }
 
-.spbox td{  
-  width: 100%;  
-  fontSize: 18px;  
- 
-}
-
 tr{  
   border-bottom: 1px solid #fff;
- 
+  font-size: 22px;
 }
 
 td{
@@ -810,6 +796,12 @@ td{
 .large-box{
   width: 50%;
   height: 50px;
+   
+  
+}
+
+.yellowTitle{
+  color: #FC3;
    
   
 }
@@ -839,12 +831,22 @@ section.locatization .item img {
     border-top-left-radius: 5px;
 }
 
+.alignCol{
+  display: flex;
+}
+
+#maplocal{
+  width: 60%;
+  float: right;
+  border-radius: 10px;
+}
+
 #locatizationmap{
-  width: 100%;
+  width: 50%;
   height: 100%;
-  margin:20px auto;
+  margin: auto;
   align-items: center;
-  paddingTop: 10px 0;
+  padding-top: 10px 0;
 }
 #locatizationmap h1{
   width: 100%;
@@ -852,8 +854,46 @@ section.locatization .item img {
   text-align: center;
 }
 
-#maplocal{
- 
+#TextMap{
+  width: 50%;
+  height: 100%;
+  margin:20px auto;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+#TextMap h4{
+  color: #FC3;
+  font-size: 30px;
+}
+
+#TextMap p{
+  color: #fff;
+  font-size: 24px;
+}
+
+#TextMap h5{
+  color: #fff;
+  font-size: 24px;
+}
+
+#TextMap h6{
+  font-size: 24px;
+}
+
+.center{
+  width: 50%;
+  text-align: center;
+}
+
+.center h5{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center a{
+  margin: 0 auto;  
 }
 
 
@@ -907,6 +947,10 @@ textarea{
   width: 480px;
   height: 120px;
   line-height: 20px;
+}
+
+form h9{
+  color: #fff;
 }
 
 
@@ -1380,7 +1424,7 @@ section.contact form {
 
 @media screen and (max-width: 767px) {  
   section.contact form {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
   }
 }
 
@@ -1393,7 +1437,7 @@ section.contact form input {
     outline: none;
     color: #fff;
     font-size: 13px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     letter-spacing: 0.5px;
 }
 
@@ -1421,13 +1465,13 @@ section.contact form textarea:focus {
     background-color: rgba(250,250,250,0.1);
 }
 
-section.contact form::placeholder { color: #fff }
-section.contact form input::placeholder { color: #fff; }
-section.contact form input::placeholder { color: #fff; }
+section.contact form::placeholder { color: rgb(231, 231, 231, 0.3) }
+section.contact form input::placeholder { color: rgb(231, 231, 231, 0.3); }
+section.contact form input::placeholder { color: rgb(231, 231, 231, 0.3); }
 
-section.contact form::placeholder { color: #fff }
-section.contact form textarea::placeholder { color: #fff; }
-section.contact form textarea::placeholder { color: #fff; }
+section.contact form::placeholder { color: rgb(231, 231, 231, 0.3); }
+section.contact form textarea::placeholder { color: rgb(231, 231, 231, 0.3); }
+section.contact form textarea::placeholder { color: rgb(231, 231, 231, 0.3); }
 
 section.contact form button {
     background-color: #f5a425;
