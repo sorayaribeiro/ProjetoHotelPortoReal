@@ -32,6 +32,9 @@ ul {
 .section-heading {
     text-align: center;
     margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-heading h2:before {
@@ -539,12 +542,27 @@ section.bedroon {
 .ContactBox{
   width: 100%;
   display: column;
-  
+  justify-content: center;
+  align-items: center;
 }
 
 .align1{  
-  width: 50%;
+  width: 50%;  
+  margin: auto;
+  color: #FFF;
+}
+
+.align2{  
+  width: 100%;
+  display: flex;
+  color: #FFF;
+  padding-top: 20px ;
+  align-items: center;
   
+}
+
+.social{
+  width: auto;
 }
 
 @media screen and (max-width: 767px) {
