@@ -553,16 +553,25 @@ section.bedroon {
 }
 
 .align2{  
-  width: 100%;
+  width: 50%;
   display: flex;
+  margin: auto;
   color: #FFF;
-  padding-top: 20px ;
-  align-items: center;
+  padding-top: 30px ;
+  justify-content: center;
+  text-align: center;
+
   
 }
 
 .social{
-  width: auto;
+  width: 50%;
+  
+  
+}
+.social img{
+  width: 70px;
+  height: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -773,7 +782,7 @@ section.tarifas form button {
   width: 100%;
   height: auto;
   color: #fff; 
- 
+
   
 }
 
