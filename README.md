@@ -11,5 +11,13 @@ As tecnologias utilizadas foram:
   
 </div><br>
 
+Imagem do projeto:<br>
+<div>
+ <img alt="imagem do projeto" src="https://i.ibb.co/SnkxsdR/screencapture-file-C-Users-Sol-pc-Documents-Code-porto-Real-Projeto-Hotel-Porto-Real-index-html-2023.png" width="auto" height="100%">
+</div>
+
+
  O projeto pode ser visualizado em:<br>
  https://sorayaribeiro.github.io/ProjetoHotelPortoReal/
+
+
